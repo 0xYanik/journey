@@ -10,4 +10,4 @@
 
    lea -> loads a memory address but it needs to use [r registers like r11,r12..]
    inc -> do add one byte to the mem address loaded with lea EXP: inc r11
-   cmp -> we do compare registers | but we do not compare memory registers EXP: cmp rax,rbx
+   cmp -> we do compare registers | but we do not compare memory alocated variables EXP: cmp rax,rbx is good            but cmp hello,hi     WILL cCRAsh
