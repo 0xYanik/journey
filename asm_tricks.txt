@@ -1,0 +1,8 @@
+    ;  Reach out to RAM to READ the value into the CPU
+    mov rax, [ramUsageBuffer + 40]  ; Brackets used: reading from RAM
+
+    ;  Manipulate the value directly INSIDE the CPU chip
+    add rax, 48                     ; No brackets: modifying the register directly
+
+    ; Reach out to RAM to WRITE the value back down
+    mov [tempBufferNumber], rax     ; Brackets used--->writing back into RAM
