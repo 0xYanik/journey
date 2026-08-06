@@ -1,0 +1,3 @@
+
+    > means “write stdout into a file”
+    | means “send stdout into another program’s stdin”
