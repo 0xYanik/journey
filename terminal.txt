@@ -1,3 +1,4 @@
 
     > means “write stdout into a file”
     | means “send stdout into another program’s stdin”
+    >(command)  : is called process substitution. It makes the Linux shell create a temporary file                         descriptor that points to the input of the command inside the parentheses the main command                    output  became the file input 
