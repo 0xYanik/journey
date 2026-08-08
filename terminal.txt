@@ -18,3 +18,8 @@
 
     -------<  tr -d  old1old2old3 new1new2new3 >------------
     [[[ best command to translate charcateres it accepts regular expressions like 'A-Za-z' too    ]]]]
+
+
+   -------------< cut -d " " -f 1 nameofFile >------------- [[[[ so usefull when traiting ai matrices data to extract data from a specific column  
+
+    -d --> how data are separated -f number pof the column
