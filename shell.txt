@@ -1,0 +1,5 @@
+[[[[[   Shell variables are temporary and are stored exclusively 
+in the volatile RAM (memory) allocated to that specific
+running shell process. Because they reside in memory, 
+they vanish completely the moment you close the terminal window, 
+exit the session, or reboot your computer ]]]]]
