@@ -17,3 +17,8 @@ SHELL VARIABLES ARE LOCAL BY DEFAULT AND THIS IS TO AVOID LEAKING sensitive data
 
 
 ]]]]]
+
+
+[[[[[    We can invoke a child process of main shell process by typing >>> sh       
+
+and quit it using >>>   cntrl+D    ]]]]]
