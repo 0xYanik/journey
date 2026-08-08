@@ -4,3 +4,10 @@
     >(command)  : is called process substitution. It makes the Linux shell create a temporary file  
 
                   descriptor that points to the input of the command inside the parentheses the main command                    output  became the file input 
+
+    Of course, this can somewhat be done by normal files:  Why use a FIFO instead? Here are key differences:
+
+    1No disk storage: FIFOs pass data directly between processes in memory - nothing is saved to disk
+    2Ephemeral data: Once data is read from a FIFO, it's gone (unlike files where data persists)
+    3Automatic synchronization: Writers block until the readers are ready, and vice-versa. This is actually           useful! It provides automatic synchronization. Consider the example above: with a FIFO, it doesn't matter if cat myfifo or echo pwn > myfifo is executed first; each would just wait for the other. With files, you need to make sure to execute the writer before the reader.
+    4Complex data flows: FIFOs are useful for facilitating complex data flows, merging and splitting data in flexible ways, and so on. For example, FIFOs support multiple readers and writers.
