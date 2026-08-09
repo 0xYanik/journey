@@ -1,4 +1,4 @@
-
+   ssh ---------> quick way to gen a key ----------------<  ssh-keygen -f key -N ''   >-------------------------------- key.pub key
    [[[[[ > means “write stdout into a file”
     | means “send stdout into another program’s stdin”
     >(command)  : is called process substitution. It makes the Linux shell create a temporary file  
