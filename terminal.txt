@@ -45,3 +45,5 @@ this means it exited with code 0). This is called the "AND" operator because bot
 
 be true: the first command must succeed AND then the second command will run. That's super useful for complex commandline workflows where certain actions depend on the success of other actions.
 ]]]]
+
+[[[ chown (user) filename       can only invoked by root and it changes ownership of files and give users access to them ]]]]
