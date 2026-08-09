@@ -1,3 +1,6 @@
+
+(((( PATH=PATH_TO A _COMMAND
+  setting the path will make you able to launch the program by its name freaking awesome 
 (((((((  
 
 Unlike su, which defaults to launching a shell as
