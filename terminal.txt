@@ -48,4 +48,7 @@ be true: the first command must succeed AND then the second command will run. Th
 
 [[[ chown (user) filename       can only invoked by root and it changes ownership of files and give users access to them ]]]]
 
-[[[[ screen --->A command that is so usefull ... it open another shell you can work on it and dettache from it using cntrl-A followed by : d   and then you can comeback to it using command : screen -r ]]]]
+[[[[ screen --->A command that is so usefull ... it open another shell you can work on it and dettache from it using cntrl-A followed by : d   and then you can comeback to it using command : screen -r 
+
+if you have multiple SCREEN sessions running in the bg you check them using : screen -ls and then choose one by screen -r nameOfscreen
+]]]]
