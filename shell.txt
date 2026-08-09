@@ -1,4 +1,11 @@
+(((((((  
+
+Unlike su, which defaults to launching a shell as
+a specified user, sudo defaults to running a command as root: 
+
+))))))
 [[[[[   Shell variables are temporary and are stored exclusively 
+
 in the volatile RAM (memory) allocated to that specific
 running shell process. Because they reside in memory, 
 they vanish completely the moment you close the terminal window, 
