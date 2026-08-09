@@ -51,4 +51,15 @@ be true: the first command must succeed AND then the second command will run. Th
 [[[[ screen --->A command that is so usefull ... it open another shell you can work on it and dettache from it using cntrl-A followed by : d   and then you can comeback to it using command : screen -r 
 
 if you have multiple SCREEN sessions running in the bg you check them using : screen -ls and then choose one by screen -r nameOfscreen
+
+Inside a single screen session, you can have multiple windows, like your browser has multiple tabs. This can be super handy for organizing different tasks!
+
+These windows are handled with different keyboard shortcuts, all starting with Ctrl-A:
+
+    Ctrl-A c - Create a new window
+    Ctrl-A n - Next window
+    Ctrl-A p - Previous window
+    Ctrl-A 0 through Ctrl-A 9 - Jump directly to window 0-9
+    Ctrl-A " - bring up a selection menu of all of the windows
+
 ]]]]
