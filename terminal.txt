@@ -1,19 +1,19 @@
 
-    > means “write stdout into a file”
+   [[[[[ > means “write stdout into a file”
     | means “send stdout into another program’s stdin”
     >(command)  : is called process substitution. It makes the Linux shell create a temporary file  
 
-                  descriptor that points to the input of the command inside the parentheses the main command                    output  became the file input 
+                  descriptor that points to the input of the command inside the parentheses the main command                    output  became the file input ]]]]]]
 
 
-    FIFO: mkfifo (filename)     -> the write to fifo type file will not happen until he knows that the read is                                   
-                                   open and set to one 
-    Of course, this can somewhat be done by normal files:  Why use a FIFO instead? Here are key differences:
+   [[[[ FIFO: mkfifo (filename)     -> the write to fifo type file will not happen until he knows that the read is                                   
+                                   open and set to one ]]]]
+  [[[[  Of course, this can somewhat be done by normal files:  Why use a FIFO instead? Here are key differences:
 
     1No disk storage: FIFOs pass data directly between processes in memory - nothing is saved to disk
     2Ephemeral data: Once data is read from a FIFO, it's gone (unlike files where data persists)
-    3Automatic synchronization: Writers block until the readers are ready, and vice-versa. This is actually           useful! It provides automatic synchronization. Consider the example above: with a FIFO, it doesn't matter if cat myfifo or echo pwn > myfifo is executed first; each would just wait for the other. With files, you need to make sure to execute the writer before the reader.
-    4Complex data flows: FIFOs are useful for facilitating complex data flows, merging and splitting data in flexible ways, and so on. For example, FIFOs support multiple readers and writers.
+    3Automatic synchronization: Writers block until the readers are ready, and vice-versa. This is actually           useful! It provides automatic synchronization. Consider the example above: with a FIFO,      it doesn't matter if cat myfifo or echo pwn > myfifo is executed first; each would just wait for the other. With files, you need to make sure to execute the writer before the reader.
+    4Complex data flows: FIFOs are useful for facilitating complex data flows, merging and splitting data in flexible ways, and so on. For example, FIFOs support multiple readers and writers.]]]]]
 
 
     -------<  tr -d  old1old2old3 new1new2new3 >------------
@@ -22,11 +22,13 @@
 
    -------------< cut -d " " -f 1 nameofFile >------------- [[[[ so usefull when traiting ai matrices data to extract data from a specific column  
 
-    -d --> how data are separated -f number pof the column
+    -d --> how data are separated -f number pof the column ]]]]]
 
 
-
+[[[[--------------------<
 
     IMPORTANT CONCEPTS : we put a processus to sleep with CNTRL+Z  --> it is asleep --> we could resume it in the foreground or background wiTH --> fg command | bg command ----> we can put a bg process to 
 
     in the fg by  --- +>   fg command IT 
+
+    BUT you might be questioning why we  don't just starting it directly in the background YES we can by appending & at the end of the COMMAND  <----------------------]]]]]
