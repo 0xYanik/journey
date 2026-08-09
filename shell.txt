@@ -36,3 +36,8 @@ test
 
 
 ]]]]
+
+[[[[[
+   shell script file .sh ---------> it can contain multiple commands and execute them all   with ||||||||||| bash file.sh OR ./file.sh  Only if it is executable
+
+   Its Output --------> we can redirect its output via |   or >   or >>  or 2> 2>>  or redirect standard error to standard ouput via 2>&1 and pass it as an input ]]]]
