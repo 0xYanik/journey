@@ -23,3 +23,10 @@
    -------------< cut -d " " -f 1 nameofFile >------------- [[[[ so usefull when traiting ai matrices data to extract data from a specific column  
 
     -d --> how data are separated -f number pof the column
+
+
+
+
+    IMPORTANT CONCEPTS : we put a processus to sleep with CNTRL+Z  --> it is asleep --> we could resume it in the foreground or background wiTH --> fg command | bg command ----> we can put a bg process to 
+
+    in the fg by  --- +>   fg command IT 
