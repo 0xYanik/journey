@@ -12,3 +12,5 @@
    inc -> do add one byte to the mem address loaded with lea EXP: inc r11
    cmp -> we do compare registers | but we do not compare memory alocated variables EXP: cmp rax,rbx is good          
           but cmp hello,hi     WILL cCRAsh
+
+   bsr ax,value    ;loads the most significant bit number position into bsr (bits ) to convert it to bytes divide by shr ax,3 and we add 1 
