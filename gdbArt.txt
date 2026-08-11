@@ -1,1 +1,4 @@
+(gdb) set logging file ~/Desktop/info_output.txt
 
+(gdb) set logging enabled on -------> now all my logs inside gdb are stored in that file to view them later 
+(gdb) set logging enabled off --------> after we done working we need to desable it or the file will become larger and larger 
