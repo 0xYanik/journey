@@ -1,0 +1,1 @@
+Fork Bomb: un program qui appelle a lui meme dans le bg --> lance deux copies de ce program to make stack stack exploads and crahs things 
