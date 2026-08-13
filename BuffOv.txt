@@ -1,0 +1,41 @@
+what i learned about buff overflow is that the buffer addresse when we use it as a param for a function and push it to the stack
+Was i was thinking Vs what realy happens :
+
+i was thinking that when we overflow it we are actualy correcpting the actual stack reserved for the function we are preparing to call
+but the realy we are corrupting data that is down of buffer in his real address
+
+
+|               |
+|               |
+|      |
+|               |
+|               |
+- - - - - - - -  -    lets say the buff has 10bytes but stdin is asking for 32bytes so the extra 22 bytes where will they go???
+|               |
+|    addr buff  |
+|     32byte    |
+|- - - - - - - -|
+|               |
+|   returnAddr  |
+
+
+
+
+
+|               |
+|               |
+|     writeme baby
+|               |
+addr|   buff            |
+- - - - - - - -  -    lets say buffer is declared in the mean function we have a nother variable declared about him the diff bwteen them is esp-18 - esp-10 = 8
+                      so in order to overite writeme baby veriable we need to input the size of the buff which is 10byte so we can overflow it  + 8 bytes to reach the variable 'writeme' and overwrite it with the exact mem addresse of something (text | function )...........
+|               |
+|    addr buff  |
+|     32byte    |
+|- - - - - - - -|
+|               |
+|   returnAddr  |
+
+
+
+  so when they say overflow the stack what actually happens we are overflowing the stack where the buffer is declared not where the fgets is used(fgets frame )
