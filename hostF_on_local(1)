@@ -1,0 +1,3 @@
+socat TCP-LISTEN:12482,reuseaddr,fork EXEC:./just_do_it
+nc localhost 12482
+
