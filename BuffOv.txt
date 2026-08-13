@@ -39,3 +39,10 @@ addr|   buff            |
 
 
   so when they say overflow the stack what actually happens we are overflowing the stack where the buffer is declared not where the fgets is used(fgets frame )
+
+
+
+
+read(int fd,buffer[count),int count) -> secure but unless you have a buffer same size as the count 
+fgets (buffer[size],inputsize,stdin) -> secure if only if size  == inputsize
+gets -> not secure baby (fucked up function)
