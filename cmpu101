@@ -8,9 +8,10 @@ _start:
  syscall
 +++++++++++++++++++++++++++++++
 
+if a register point to an array -> her it comes the term OFFSET 
+if we want access the second index for exemple we do [rdi+1]    [rdi]=value of 1st index
 
-
-
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 
