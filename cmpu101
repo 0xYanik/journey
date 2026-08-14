@@ -12,6 +12,12 @@ if a register point to an array -> her it comes the term OFFSET
 if we want access the second index for exemple we do [rdi+1]    [rdi]=value of 1st index
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Similarly, since memory addresses are really just values, they can be stored in memory, and retrieved later.
+a scenario where we store the value 133700 at the address 123400, and store the value 42 at the address 133700. Consider the following instructions:
+
+mov rdi, 123400    # after this, rdi becomes 123400
+mov rdi, [rdi]     # after this, rdi becomes the value stored at 123400 (which is 133700)
+mov rax, [rdi]     # here we dereference rdi, reading 42 into rax!
 
 
 
