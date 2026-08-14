@@ -49,7 +49,10 @@ mov [rsp],0x1245654589788587 |--------------> equivalent to mov rax,0x1245654589
 
 
 
+======>La Pile (Gestion Système) : Grandit vers le bas (les adresses basses) uniquement quand le système réserve de 
+l'espace pour une nouvelle fonction ou fait un PUSH.
 
+======>Les Données (Écriture) : S'écrivent toujours vers le haut (les adresses hautes), du début du tableau vers la fin.
 
 
 
