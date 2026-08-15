@@ -19,4 +19,10 @@ En informatique, les ingénieurs en sécurité ont repris cette idée exacte à 
   3.Juste avant le return, le programme vérifie si le canari a changé. Si c'est le cas, il appelle immédiatement exit()
      ou __stack_chk_fail() pour couper le programme avant que l'adresse de retour corrompue ne soit exécutée.
 
+0x0000000000401169 <+55>:    mov    rax,QWORD PTR [rbp-0x8]
+   0x000000000040116d <+59>:    xor    rax,QWORD PTR fs:0x28
+   0x0000000000401176 <+68>:    je     0x40117d <main+75>
+as you see stack canary  uses xor instead of cmp -> xoring two identical values results 0 so the zero flag is set two 1 so it triggers 
+jmp equal 
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
