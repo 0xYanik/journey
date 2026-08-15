@@ -25,11 +25,20 @@ En informatique, les ingénieurs en sécurité ont repris cette idée exacte à 
 as you see stack canary  uses xor instead of cmp -> xoring two identical values results 0 so the zero flag is set two 1 so it triggers 
 jmp equal 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+--------------------------------------------------------------------------------------------------------------------------------
 
 
 aslr ===> kernel based security that randomise code address of main functions shared libraries and more (it makes harder to predict which mem addresse the code gonna be 
+
+---------------------------------------------------------------------------------------------------------------------------------
 pie --> pie without aslr is nothing ===> pie makes the code have an offset | breaking throu it : leaking one real addresse from the code we can calculate the offset and it will stay the 
           same , cz as we know distance between two mem addresses never change
 
-NX  == >  non executable -> a very annoying stack security that dont allow us to execute code in the stack (it created to kill buff overflows technics ) even if a valid blov of code placed there 
+----------------------------------------------------------------------------------------------------------------------------------
+
+NX  == >  non executable -> a very annoying stack security that dont allow us to execute code in the stack (it created to kill buff overflows technics ) even if a valid blov of code placed there
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Relro (Read only Relocation) ====>affects the memory permissions similar to NX. The difference is whereas with NX it
+makes the stack non-executable, RELRO makes certain things read only so we can't write to them
