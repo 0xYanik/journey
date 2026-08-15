@@ -1,4 +1,22 @@
 ---------------<       it is about the exploit not the text file          >-------------------- 
 
 
-Sanitizing : is a type of filtering, but with a specific goal: safety
+Sanitizing : is a type of filtering, but with a specific goal: safety  
+
+
+
+
+
+::::::::::::L'histoire du Canari de pile (Stack Canary)::::::
+Dans les mines de charbon, les mineurs emportaient un canari. 
+Si des gaz toxiques invisibles se répandaient, 
+le canari mourait en premier, alertant les mineurs qu'il fallait fuir.
+
+
+En informatique, les ingénieurs en sécurité ont repris cette idée exacte à la fin des années 90 (avec une technologie appelée StackGuard) :
+  1.Au début d'une fonction, le programme place une valeur secrète (le "canari") juste avant l'adresse de retour.
+  2.Si un pirate tente d'écraser l'adresse de retour via un buffer overflow, il est obligé d'écraser le canari au passage.
+  3.Juste avant le return, le programme vérifie si le canari a changé. Si c'est le cas, il appelle immédiatement exit()
+     ou __stack_chk_fail() pour couper le programme avant que l'adresse de retour corrompue ne soit exécutée.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
