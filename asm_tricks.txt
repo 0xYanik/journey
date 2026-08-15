@@ -1,4 +1,5 @@
-    ;  Reach out to RAM to READ the value into the CPU
+  ret = pop rpi 
+;  Reach out to RAM to READ the value into the CPU
     mov rax, [ramUsageBuffer + 40]  ; Brackets used: reading from RAM
 
     ;  Manipulate the value directly INSIDE the CPU chip
