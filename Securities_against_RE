@@ -26,3 +26,8 @@ as you see stack canary  uses xor instead of cmp -> xoring two identical values 
 jmp equal 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+aslr ===> kernel based security that randomise code address of main functions shared libraries and more (it makes harder to predict which mem addresse the code gonna be 
+pie --> pie without aslr is nothing ===> pie makes the code have an offset | breaking throu it : leaking one real addresse from the code we can calculate the offset and it will stay the 
+          same , cz as we know distance between two mem addresses never change
