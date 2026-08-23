@@ -1,1 +1,8 @@
 
+When the binary is dynamically linked and we try a rop attaque and call system():
+ system uses some ultra fast move instructions called #movaps#   movaps when used it required the stack pointer #rsp# to point to a multiple of 16 which means it should end with 0
+
+
+why exatcly 0? : lets look at base 10 that we use everyday a multiple of 10 should end with 0 the same thing go with base 16
+
+so what we do is we need to put a single ret before any gadget (rop) so we do a 8bytes  decalage to the stack to force it end with 0
