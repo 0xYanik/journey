@@ -17,3 +17,17 @@ Peripherals->|
              |                             Analog-to-digital converters (ADCs): ADCs convert analog signals (such as those from a
              |                             temperature sensor) into digital values that the microcontroller can process.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+Clock gating->|
+              |                              Having identified the exact address of GPIOA, our next step is to enable clock access to it before
+              |                              configuring its registers. This step is necessary because, by default, the clock to all unused peripherals
+              |                              is disabled to conserve power.
+              |
+              |                              Modern microcontrollers use a power-saving technique known as clock gating. In simple terms, clock
+              |                              gating involves selectively turning off the clock signal to certain parts of the microcontroller when
+              |                              they’re not in use. The clock signal is an essential part of microcontroller operations, as it drives the
+              |                              sequential logic by providing a regular pulse that synchronizes the activities of the microcontroller’s
+              |                              circuits. However, when a particular part of the microcontroller, such as a peripheral, is not actively being
+              |                              used, the clock signal to that part is disabled. This disabling prevents unnecessary power consumption
+              |                              by idle circuits. Therefore, before using any peripheral, it’s required to first enable clock access to it.
+              |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
