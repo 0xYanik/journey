@@ -1,13 +1,19 @@
-In the context of microcontrollers, a peripheral refers to a hardware component that is not part of
-the central processing unit (CPU) but is connected to the microcontroller to extend its capabilities.
-Peripherals perform specific functions and can include a wide range of components, such as the following:
-••••GPIO ports: These are used for interfacing with external devices such as LEDs, switches, and
-sensors. They can be programmed to either receive input signals or send output signals.
-Communication interfaces: These include serial communication interfaces such as a universal
-asynchronous receiver-transmitter (UART), Serial Peripheral Interface (SPI), and Inter-
-Integrated Circuit (I2C), which enable the microcontroller to communicate with other devices,
-sensors, or even other microcontrollers.
-Timers and counters: Timers are used for measuring time intervals or generating time-based
-events, while counters can be used to count events or pulses.
-Analog-to-digital converters (ADCs): ADCs convert analog signals (such as those from a
-temperature sensor) into digital values that the microcontroller can process.
+Peripherals->|
+             |                             In the context of microcontrollers, a peripheral refers to a hardware component that is not part of
+             |                             the central processing unit (CPU) but is connected to the microcontroller to extend its capabilities.
+             |                             Peripherals perform specific functions and can include a wide range of components, such as the following:
+             |                                 GPIO ports: These are used for interfacing with external devices such as LEDs, switches, and
+             |                             sensors. They can be programmed to either receive input signals or send output signals.
+             |                             
+             |                             
+             |                                 Communication interfaces: These include serial communication interfaces such as a universal
+             |                             asynchronous receiver-transmitter (UART), Serial Peripheral Interface (SPI), and Inter-
+             |                             Integrated Circuit (I2C), which enable the microcontroller to communicate with other devices,
+             |                             sensors, or even other microcontrollers.
+             |                             
+             |                           
+             |                                 Timers and counters: Timers are used for measuring time intervals or generating time-based
+             |                             events, while counters can be used to count events or pulses.
+             |                             Analog-to-digital converters (ADCs): ADCs convert analog signals (such as those from a
+             |                             temperature sensor) into digital values that the microcontroller can process.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
