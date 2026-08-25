@@ -31,3 +31,12 @@ Clock gating->|
               |                              by idle circuits. Therefore, before using any peripheral, it’s required to first enable clock access to it.
               |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+memoryDensity-> |                                 Memory density refers to the concentration of memory storage within a given physical space
+                |                                or component. Memory density is often expressed in terms of bits or bytes stored per unit of
+                |                                physical area, such as bits per square millimeter or bytes per square centimeter. It measures
+                |                                how densely or compactly data can be stored within that space. Higher memory density means
+                |                                that we can store more data than we can in a smaller physical space.
+                |                                Memory size, on the other hand, refers to the total amount of memory (storage capacity)
+                |                                available in a given storage device. It is typically measured in units such as bytes, kilobytes
+                |                                (KB), megabytes (MB), gigabytes (GB), etc.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
