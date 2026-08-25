@@ -1,1 +1,7 @@
-
+WE FOCUS >>sram<< AND >>flash mem<<- --------------------------------------------------------------------------------------------------------------------------------------
+    |                                While the STM32 memory map consists of various memory areas, our primary focus in developing
+    |                                the linker script and startup file revolves around two critical areas: flash memory and static random
+    |                                access memory (SRAM). These areas are of utmost importance because they are directly involved
+    |                                in program storage. In the initial parts of this section, we will learn about the characteristics of these
+    |                                memory areas and the distinct roles they play.
+    |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
