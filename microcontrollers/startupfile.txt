@@ -1,0 +1,2 @@
+After writing linker file: we write start file to intialise .bss data 
+to make sure our firmware data start with a known state to enhance predictability 
