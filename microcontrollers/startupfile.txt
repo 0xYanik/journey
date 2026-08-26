@@ -1,2 +1,23 @@
 After writing linker file: we write start file to intialise .bss data 
 to make sure our firmware data start with a known state to enhance predictability 
+
+
+Implementing the vector table: This involves defining the vector table that maps interrupts to
+their handlers, ensuring the system can respond to various events efficiently.
+
+
+Creating interrupt handlers: For each interrupt listed in the vector table, an interrupt handler
+must be implemented to define how the system responds to that particular event.
+
+
+Establishing the firmware’s entry point: This refers to implementing Reset_Handler, as
+specified in the linker script, which acts as the initial entry point of the firmware. This function
+is executed immediately after reset and is responsible for setting up the environment for the
+main application.
+
+
+Transferring the .data section: This involves copying the .data section from FLASH to SRAM.
+
+
+Zeroing the .bss section: This involves initializing the .bss section to zero, ensuring that all
+uninitialized global and static variables start with a known state for reliable operation.
