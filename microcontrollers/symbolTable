@@ -1,1 +1,8 @@
 
+In the process of linking the object file and resolving mem addresses it generates the symbol tyble which is crucial 
+it contains 
+ name    type    value 
+ex:X     symbol   0x6000000
+
+opposite of C lan 
+ variables contains value  assigned to them   but in an object file variables contains their  addresse in memory
