@@ -5,3 +5,26 @@ WE FOCUS >>sram<< AND >>flash mem<<- -------------------------------------------
     |                                in program storage. In the initial parts of this section, we will learn about the characteristics of these
     |                                memory areas and the distinct roles they play.
     |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+VMA & LMA ===>----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|
+|                                                                | .data :
+|                                                                  {
+|                                                                    . = ALIGN(4);
+|                                                                    _sdata = .;  /* create a global symbol at data start */
+|                                                                    *(.data)           /* .data sections */
+|                                                                    *(.data*)          /* .data* sections */
+|                                                                    *(.RamFunc)        /* .RamFunc sections */
+|                                                                    *(.RamFunc*)       /* .RamFunc* sections */
+|                                                                    . = ALIGN(4);
+|                                                                    _edata = .;  /* define a global symbol at data end */
+|                                                                  } >SRAM AT> FLASH
+|
+|                                                    This detailed management of memory addresses highlights the critical role of LMA and VMA in
+|                                                    maximizing the efficiency of resource-constrained microcontrollers. Through the effective use of LMA
+|                                                    and VMA, we can ensure that even with limited memory resources, our microcontrollers operate
+|                                                    reliably and efficiently, optimizing both storage and execution efficiency.
+|
+|
+|
+|       >SRAM AT> FLASH ==> means   even .data stored in SRAM (VMA) during execution it should be loaded  into FLASH (LMA)  
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
