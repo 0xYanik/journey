@@ -23,6 +23,13 @@ VMA & LMA ===>------------------------------------------------------------------
 |                                                    maximizing the efficiency of resource-constrained microcontrollers. Through the effective use of LMA
 |                                                    and VMA, we can ensure that even with limited memory resources, our microcontrollers operate
 |                                                    reliably and efficiently, optimizing both storage and execution efficiency.
+
+
+                                                     Another example:
+                                                       .data : AT> FLASH
+                                                        {
+                                                          *(.data)
+                                                        } >SRAM
 |
 |
 |
