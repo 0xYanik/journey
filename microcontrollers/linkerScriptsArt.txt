@@ -44,3 +44,8 @@ The KEEP directive ===>
 |
 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+the ALIGN directive is so important : 
+    we do .=ALIGN(4) means align current mem address to be a multiple of 4      because CPU  reads data in chanks if it is not aligned it will not read it 
+     lets suppose our linker is at 0x000000001 and we didnt align it we assigned to it .data the cpu will not read it 
+     but in opposite if we did allign it 0x00000001 will be 0x000000004 and cpu will read it 0x0000005->0x00000008
